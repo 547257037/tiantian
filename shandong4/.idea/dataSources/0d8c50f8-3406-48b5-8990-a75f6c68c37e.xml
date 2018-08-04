@@ -1,0 +1,1507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="starv_shandong@80.0.0.56">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.7">
+    <root id="1"/>
+    <database id="2" parent="1" name="starv_shandong">
+      <ObjectId>16385</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>13158</ObjectId>
+    </database>
+    <database id="4" parent="1" name="kzdebr">
+      <ObjectId>17071</ObjectId>
+    </database>
+    <role id="5" parent="1" name="c85cf2d2">
+      <ObjectId>16964</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <ValidUntil>infinity</ValidUntil>
+    </role>
+    <role id="6" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="7" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="8" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="9" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="10" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="pgsql">
+      <ObjectId>16966</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <ValidUntil>infinity</ValidUntil>
+    </role>
+    <role id="12" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <role id="13" parent="1" name="root">
+      <ObjectId>16384</ObjectId>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <schema id="14" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2018-07-26.12:02:19.408</IntrospectionTimestamp>
+      <IntrospectionStateNumber>5806</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="15" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="16" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="17" parent="2" name="pg_temp_1">
+      <ObjectId>11736</ObjectId>
+    </schema>
+    <schema id="18" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11737</ObjectId>
+    </schema>
+    <schema id="19" parent="2" name="information_schema">
+      <ObjectId>12867</ObjectId>
+    </schema>
+    <sequence id="20" parent="14" name="starv_column_id_seq">
+      <ObjectId>25223</ObjectId>
+      <StateNumber>5761</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="21" parent="14" name="channel_shandong_id_seq">
+      <ObjectId>16988</ObjectId>
+      <StateNumber>1638</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="22" parent="14" name="dict_channel_id_seq">
+      <ObjectId>16879</ObjectId>
+      <StateNumber>1286</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="23" parent="14" name="dict_cp_id_seq">
+      <ObjectId>17102</ObjectId>
+      <StateNumber>3283</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="24" parent="14" name="starv_area_id_seq">
+      <ObjectId>16389</ObjectId>
+      <StateNumber>559</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="25" parent="14" name="starv_channel_channel_code_seq">
+      <ObjectId>16838</ObjectId>
+      <StateNumber>1238</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="26" parent="14" name="starv_channel_group_channel_group_code_seq">
+      <ObjectId>16848</ObjectId>
+      <StateNumber>1244</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="27" parent="14" name="starv_cp_cp_id_seq">
+      <ObjectId>16443</ObjectId>
+      <StateNumber>587</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="28" parent="14" name="starv_epg_id_seq">
+      <ObjectId>16975</ObjectId>
+      <StateNumber>1629</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="29" parent="14" name="starv_operator_id_seq">
+      <ObjectId>16474</ObjectId>
+      <StateNumber>598</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="30" parent="14" name="starv_platform_id_seq">
+      <ObjectId>16487</ObjectId>
+      <StateNumber>603</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="31" parent="14" name="starv_stb_num_id_seq">
+      <ObjectId>16967</ObjectId>
+      <StateNumber>1538</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="32" parent="14" name="system_role_role_id_seq">
+      <ObjectId>16743</ObjectId>
+      <StateNumber>1132</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="33" parent="14" name="system_user_user_id_seq">
+      <ObjectId>16731</ObjectId>
+      <StateNumber>888</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <table id="34" parent="14" name="channel_shandong">
+      <ObjectId>16990</ObjectId>
+      <StateNumber>1638</StateNumber>
+    </table>
+    <table id="35" parent="14" name="dict_channel">
+      <ObjectId>16881</ObjectId>
+      <StateNumber>5805</StateNumber>
+    </table>
+    <table id="36" parent="14" name="dict_cp">
+      <ObjectId>17104</ObjectId>
+      <StateNumber>3283</StateNumber>
+    </table>
+    <table id="37" parent="14" name="mid_online">
+      <ObjectId>17016</ObjectId>
+      <StateNumber>1856</StateNumber>
+    </table>
+    <table id="38" parent="14" name="mid_user_pool">
+      <ObjectId>17013</ObjectId>
+      <StateNumber>3136</StateNumber>
+    </table>
+    <table id="39" parent="14" name="nanchuan_cms_column">
+      <ObjectId>17203</ObjectId>
+      <StateNumber>5130</StateNumber>
+    </table>
+    <table id="40" parent="14" name="starv_area">
+      <ObjectId>16391</ObjectId>
+      <Comment>区域表</Comment>
+      <StateNumber>559</StateNumber>
+    </table>
+    <table id="41" parent="14" name="starv_channel">
+      <ObjectId>16840</ObjectId>
+      <Comment>频道表(含直播频道回看频道)</Comment>
+      <StateNumber>5806</StateNumber>
+    </table>
+    <table id="42" parent="14" name="starv_channel_group">
+      <ObjectId>16850</ObjectId>
+      <Comment>频道组表</Comment>
+      <StateNumber>1244</StateNumber>
+    </table>
+    <table id="43" parent="14" name="starv_channel_group_sel">
+      <ObjectId>16856</ObjectId>
+      <Comment>频道组和频道关系表</Comment>
+      <StateNumber>1249</StateNumber>
+    </table>
+    <table id="44" parent="14" name="starv_column">
+      <ObjectId>25225</ObjectId>
+      <StateNumber>5761</StateNumber>
+    </table>
+    <table id="45" parent="14" name="starv_column_sel">
+      <ObjectId>16903</ObjectId>
+      <StateNumber>5694</StateNumber>
+    </table>
+    <table id="46" parent="14" name="starv_column_tmp">
+      <ObjectId>17051</ObjectId>
+      <StateNumber>3072</StateNumber>
+    </table>
+    <table id="47" parent="14" name="starv_cp">
+      <ObjectId>16445</ObjectId>
+      <StateNumber>650</StateNumber>
+    </table>
+    <table id="48" parent="14" name="starv_epg">
+      <ObjectId>16977</ObjectId>
+      <Comment>EPG表(电子节目单)</Comment>
+      <StateNumber>1629</StateNumber>
+    </table>
+    <table id="49" parent="14" name="starv_media">
+      <ObjectId>16455</ObjectId>
+      <Comment>影片表</Comment>
+      <StateNumber>1325</StateNumber>
+    </table>
+    <table id="50" parent="14" name="starv_media_column">
+      <ObjectId>16911</ObjectId>
+      <StateNumber>1320</StateNumber>
+    </table>
+    <table id="51" parent="14" name="starv_media_column_tmp">
+      <ObjectId>16954</ObjectId>
+      <StateNumber>1419</StateNumber>
+    </table>
+    <table id="52" parent="14" name="starv_operator">
+      <ObjectId>16476</ObjectId>
+      <Comment>运营商表</Comment>
+      <StateNumber>1185</StateNumber>
+    </table>
+    <table id="53" parent="14" name="starv_platform">
+      <ObjectId>16489</ObjectId>
+      <Comment>平台表</Comment>
+      <StateNumber>1193</StateNumber>
+    </table>
+    <table id="54" parent="14" name="starv_stb_num">
+      <ObjectId>16969</ObjectId>
+      <StateNumber>1538</StateNumber>
+    </table>
+    <table id="55" parent="14" name="starv_vod_type_probe">
+      <ObjectId>17268</ObjectId>
+      <StateNumber>5485</StateNumber>
+    </table>
+    <table id="56" parent="14" name="system_menu">
+      <ObjectId>16720</ObjectId>
+      <Comment>菜单表</Comment>
+      <StateNumber>1171</StateNumber>
+    </table>
+    <table id="57" parent="14" name="system_role">
+      <ObjectId>16694</ObjectId>
+      <Comment>操作员角色(权限管理)</Comment>
+      <StateNumber>1194</StateNumber>
+    </table>
+    <table id="58" parent="14" name="system_role_area">
+      <ObjectId>16513</ObjectId>
+      <StateNumber>619</StateNumber>
+    </table>
+    <table id="59" parent="14" name="system_role_channel">
+      <ObjectId>16517</ObjectId>
+      <Comment>角色频道关联表</Comment>
+      <StateNumber>1415</StateNumber>
+    </table>
+    <table id="60" parent="14" name="system_role_menu">
+      <ObjectId>16520</ObjectId>
+      <Comment>角色菜单(权限访问接口)</Comment>
+      <StateNumber>1174</StateNumber>
+    </table>
+    <table id="61" parent="14" name="system_role_operator">
+      <ObjectId>16523</ObjectId>
+      <Comment>角色运营商关联表</Comment>
+      <StateNumber>1185</StateNumber>
+    </table>
+    <table id="62" parent="14" name="system_role_platform">
+      <ObjectId>16526</ObjectId>
+      <Comment>角色平台关联表</Comment>
+      <StateNumber>1194</StateNumber>
+    </table>
+    <table id="63" parent="14" name="system_user">
+      <ObjectId>16733</ObjectId>
+      <Comment>操作员(用户)</Comment>
+      <StateNumber>1136</StateNumber>
+    </table>
+    <table id="64" parent="14" name="vod_media_tmp">
+      <ObjectId>16827</ObjectId>
+      <StateNumber>1889</StateNumber>
+    </table>
+    <routine id="65" parent="14" name="upd_timestamp">
+      <ObjectId>16544</ObjectId>
+      <StateNumber>647</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <ResultsDefinition>trigger</ResultsDefinition>
+      <LanguageName>plpgsql</LanguageName>
+      <RoutineKind>function</RoutineKind>
+      <ConcurrencyKind>unsafe</ConcurrencyKind>
+      <Cost>100.0</Cost>
+    </routine>
+    <column id="66" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1638</StateNumber>
+      <DefaultExpression>nextval(&apos;channel_shandong_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>channel_shandong_id_seq</SequenceName>
+    </column>
+    <column id="67" parent="34" name="channelname">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1638</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="68" parent="34" name="channelcode">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1638</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="69" parent="34" name="localcode">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1638</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="70" parent="34" name="areacode">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1638</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="71" parent="34" name="channel_shandong_pkey">
+      <ObjectId>16997</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="72" parent="34" name="channel_shandong_pkey">
+      <ObjectId>16998</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>channel_shandong_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="73" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1286</StateNumber>
+      <DefaultExpression>nextval(&apos;dict_channel_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>dict_channel_id_seq</SequenceName>
+    </column>
+    <column id="74" parent="35" name="source_channel_info">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1286</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="75" parent="35" name="channel_code">
+      <Position>3</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>5805</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="76" parent="35" name="dict_channel_pkey">
+      <ObjectId>16885</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="77" parent="35" name="dict_channel_pkey">
+      <ObjectId>16886</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>dict_channel_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="78" parent="36" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3283</StateNumber>
+      <DefaultExpression>nextval(&apos;dict_cp_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>dict_cp_id_seq</SequenceName>
+    </column>
+    <column id="79" parent="36" name="cp_prefix">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3283</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="80" parent="36" name="cp_code">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3283</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="81" parent="36" name="dict_cp_pkey">
+      <ObjectId>17111</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="82" parent="36" name="dict_cp_cp_code_cp_prefix_pk">
+      <ObjectId>17113</ObjectId>
+      <ColNames>cp_code
+cp_prefix</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="83" parent="36" name="dict_cp_pkey">
+      <ObjectId>17112</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>dict_cp_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="84" parent="36" name="dict_cp_cp_code_cp_prefix_pk">
+      <ObjectId>17114</ObjectId>
+      <ColNames>cp_code
+cp_prefix</ColNames>
+      <UnderlyingIndexName>dict_cp_cp_code_cp_prefix_pk</UnderlyingIndexName>
+    </key>
+    <column id="85" parent="37" name="user_id">
+      <Position>1</Position>
+      <DataType>varchar(25)|0</DataType>
+      <StateNumber>1755</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="86" parent="37" name="area_code">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+      <StateNumber>1755</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="87" parent="37" name="dt">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <StateNumber>1755</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="88" parent="37" name="operator">
+      <Position>4</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>1855</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="89" parent="37" name="platform">
+      <Position>5</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>1856</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="90" parent="38" name="user_id">
+      <Position>1</Position>
+      <DataType>varchar(25)|0</DataType>
+      <StateNumber>1753</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="91" parent="38" name="area_code">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+      <StateNumber>1753</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="92" parent="38" name="create_date">
+      <Position>3</Position>
+      <DataType>varchar(25)|0</DataType>
+      <StateNumber>1753</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="93" parent="38" name="dt">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+      <StateNumber>1753</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="94" parent="38" name="operator">
+      <Position>5</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>1857</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="95" parent="38" name="platform">
+      <Position>6</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>1858</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="96" parent="39" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>5130</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="97" parent="39" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>5130</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="98" parent="39" name="code">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>5130</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="99" parent="39" name="parentid">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>5130</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="100" parent="39" name="parentcode">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>5130</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="101" parent="39" name="day">
+      <Position>6</Position>
+      <DataType>date|0</DataType>
+      <StateNumber>5130</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <index id="102" parent="39" name="nanchuan_cms_column_pkey">
+      <ObjectId>17209</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="103" parent="39" name="nanchuan_cms_column_pkey">
+      <ObjectId>17210</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>nanchuan_cms_column_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="104" parent="40" name="id">
+      <Position>1</Position>
+      <Comment>唯一id</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>559</StateNumber>
+      <DefaultExpression>nextval(&apos;starv_area_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>starv_area_id_seq</SequenceName>
+    </column>
+    <column id="105" parent="40" name="area_code">
+      <Position>2</Position>
+      <Comment>区域code</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>559</StateNumber>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="106" parent="40" name="area_name">
+      <Position>3</Position>
+      <Comment>区域name</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>559</StateNumber>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="107" parent="40" name="parent_area_code">
+      <Position>4</Position>
+      <Comment>父级级区域code</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>559</StateNumber>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="108" parent="40" name="starv_area_pkey">
+      <ObjectId>16401</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="109" parent="40" name="starv_area_pkey">
+      <ObjectId>16402</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>starv_area_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="110" parent="41" name="channel_code">
+      <Position>1</Position>
+      <Comment>频道code</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>5806</StateNumber>
+      <DefaultExpression>nextval(&apos;starv_channel_channel_code_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>starv_channel_channel_code_seq</SequenceName>
+    </column>
+    <column id="111" parent="41" name="channel_name">
+      <Position>2</Position>
+      <Comment>频道name</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1238</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="112" parent="41" name="look_back_flag">
+      <Position>3</Position>
+      <Comment>1为回看频道 0直播频道</Comment>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1750</StateNumber>
+      <DefaultExpression>0</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="113" parent="41" name="starv_channel_channel_name_uindex">
+      <ObjectId>17008</ObjectId>
+      <ColNames>channel_name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <column id="114" parent="42" name="channel_group_code">
+      <Position>1</Position>
+      <Comment>频道组code</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1244</StateNumber>
+      <DefaultExpression>nextval(&apos;starv_channel_group_channel_group_code_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>starv_channel_group_channel_group_code_seq</SequenceName>
+    </column>
+    <column id="115" parent="42" name="channel_group_name">
+      <Position>2</Position>
+      <Comment>频道组name</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1244</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="116" parent="42" name="starv_channel_group_pkey">
+      <ObjectId>16854</ObjectId>
+      <ColNames>channel_group_code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="117" parent="42" name="starv_channel_group_pkey">
+      <ObjectId>16855</ObjectId>
+      <ColNames>channel_group_code</ColNames>
+      <UnderlyingIndexName>starv_channel_group_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="118" parent="43" name="channel_code">
+      <Position>1</Position>
+      <Comment>频道code</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1249</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="119" parent="43" name="channel_group_code">
+      <Position>2</Position>
+      <Comment>频道组code</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1249</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="120" parent="44" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>5761</StateNumber>
+      <DefaultExpression>nextval(&apos;starv_column_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>starv_column_id_seq</SequenceName>
+    </column>
+    <column id="121" parent="44" name="column_code">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>5761</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="122" parent="44" name="column_name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>5761</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="123" parent="44" name="create_time">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <StateNumber>5761</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="124" parent="44" name="update_time">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+      <StateNumber>5761</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="125" parent="44" name="operator">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>5761</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="126" parent="45" name="column_code">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1489</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="127" parent="45" name="parent_column_code">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1316</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="128" parent="45" name="leaf_flag">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>1466</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="129" parent="45" name="starv_column_sel_column_code_parent_column_code_pk">
+      <ObjectId>16960</ObjectId>
+      <ColNames>column_code
+parent_column_code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="130" parent="45" name="starv_column_sel_column_code_parent_column_code_pk">
+      <ObjectId>16961</ObjectId>
+      <ColNames>column_code
+parent_column_code</ColNames>
+      <UnderlyingIndexName>starv_column_sel_column_code_parent_column_code_pk</UnderlyingIndexName>
+    </key>
+    <column id="131" parent="46" name="column_code">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>3072</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="132" parent="46" name="column_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>3072</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="133" parent="46" name="starv_column_tmp_column_code_key">
+      <ObjectId>17057</ObjectId>
+      <ColNames>column_code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="134" parent="46" name="starv_column_tmp_column_code_key">
+      <ObjectId>17058</ObjectId>
+      <ColNames>column_code</ColNames>
+      <UnderlyingIndexName>starv_column_tmp_column_code_key</UnderlyingIndexName>
+    </key>
+    <column id="135" parent="47" name="cp_id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>587</StateNumber>
+      <DefaultExpression>nextval(&apos;starv_cp_cp_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>starv_cp_cp_id_seq</SequenceName>
+    </column>
+    <column id="136" parent="47" name="cp_name">
+      <Position>2</Position>
+      <DataType>varchar(225)|0</DataType>
+      <StateNumber>587</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="137" parent="47" name="cp_code">
+      <Position>3</Position>
+      <DataType>varchar(225)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>587</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="138" parent="47" name="create_time">
+      <Position>4</Position>
+      <DataType>timestamp|0</DataType>
+      <StateNumber>587</StateNumber>
+      <DefaultExpression>now()</DefaultExpression>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="139" parent="47" name="update_time">
+      <Position>5</Position>
+      <DataType>timestamp|0</DataType>
+      <StateNumber>587</StateNumber>
+      <DefaultExpression>now()</DefaultExpression>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="140" parent="47" name="starv_cp_cp_id_uindex">
+      <ObjectId>16453</ObjectId>
+      <ColNames>cp_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="141" parent="47" name="starv_cp_cp_code_uindex">
+      <ObjectId>16454</ObjectId>
+      <ColNames>cp_code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="142" parent="47" name="starv_cp_pkey">
+      <ObjectId>16451</ObjectId>
+      <ColNames>cp_code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="143" parent="47" name="starv_cp_pkey">
+      <ObjectId>16452</ObjectId>
+      <ColNames>cp_code</ColNames>
+      <UnderlyingIndexName>starv_cp_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="144" parent="47" name="starv_movie_column">
+      <ObjectId>16548</ObjectId>
+      <StateNumber>650</StateNumber>
+      <Turn>before-row</Turn>
+      <Events>U</Events>
+      <FireMode>origin</FireMode>
+      <CallRoutineId>16544</CallRoutineId>
+    </trigger>
+    <column id="145" parent="48" name="id">
+      <Position>1</Position>
+      <Comment>唯一id</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1629</StateNumber>
+      <DefaultExpression>nextval(&apos;starv_epg_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>starv_epg_id_seq</SequenceName>
+    </column>
+    <column id="146" parent="48" name="program_name">
+      <Position>2</Position>
+      <Comment>节目名称</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1629</StateNumber>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="147" parent="48" name="dt">
+      <Position>3</Position>
+      <Comment>日期 yyyyMMdd</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1629</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="148" parent="48" name="start_time">
+      <Position>4</Position>
+      <Comment>开始时间HHmmss</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1629</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="149" parent="48" name="end_time">
+      <Position>5</Position>
+      <Comment>结束时间HHmmss</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1629</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="150" parent="48" name="channel_code">
+      <Position>6</Position>
+      <Comment>频道code</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1629</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="151" parent="48" name="starv_epg_pkey">
+      <ObjectId>16985</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="152" parent="48" name="starv_epg_dt_channel_code_start_time_index">
+      <ObjectId>17020</ObjectId>
+      <ColNames>dt
+channel_code
+start_time</ColNames>
+    </index>
+    <key id="153" parent="48" name="starv_epg_pkey">
+      <ObjectId>16986</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>starv_epg_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="154" parent="49" name="media_name">
+      <Position>1</Position>
+      <Comment>影片名</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1293</StateNumber>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="155" parent="49" name="media_id">
+      <Position>2</Position>
+      <Comment>影片code</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1333</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="156" parent="49" name="create_time">
+      <Position>3</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1324</StateNumber>
+      <DefaultExpression>now()</DefaultExpression>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="157" parent="49" name="update_time">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1326</StateNumber>
+      <DefaultExpression>now()</DefaultExpression>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="158" parent="49" name="cp_code">
+      <Position>5</Position>
+      <Comment>CP 唯一code</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1337</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="159" parent="49" name="starv_movie_pkey">
+      <ObjectId>16464</ObjectId>
+      <ColNames>media_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="160" parent="49" name="starv_movie_pkey">
+      <ObjectId>16465</ObjectId>
+      <ColNames>media_id</ColNames>
+      <UnderlyingIndexName>starv_movie_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="161" parent="49" name="t_update_time">
+      <ObjectId>16565</ObjectId>
+      <StateNumber>654</StateNumber>
+      <Turn>before-row</Turn>
+      <Events>U</Events>
+      <FireMode>origin</FireMode>
+      <CallRoutineId>16544</CallRoutineId>
+    </trigger>
+    <column id="162" parent="50" name="media_id">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1320</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="163" parent="50" name="column_code">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1320</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="164" parent="50" name="create_time">
+      <Position>3</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1320</StateNumber>
+      <DefaultExpression>now()</DefaultExpression>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="165" parent="51" name="media_id">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1419</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="166" parent="51" name="column_code">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1419</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="167" parent="52" name="id">
+      <Position>1</Position>
+      <Comment>唯一id</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>598</StateNumber>
+      <DefaultExpression>nextval(&apos;starv_operator_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>starv_operator_id_seq</SequenceName>
+    </column>
+    <column id="168" parent="52" name="operator_code">
+      <Position>2</Position>
+      <Comment>运营商code</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1180</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="169" parent="52" name="operator_name">
+      <Position>3</Position>
+      <Comment>运营商name</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>598</StateNumber>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="170" parent="52" name="starv_operator_pkey">
+      <ObjectId>16485</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="171" parent="52" name="starv_operator_operator_code_uindex">
+      <ObjectId>16785</ObjectId>
+      <ColNames>operator_code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="172" parent="52" name="starv_operator_pkey">
+      <ObjectId>16486</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>starv_operator_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="173" parent="53" name="id">
+      <Position>1</Position>
+      <Comment>唯一id</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>603</StateNumber>
+      <DefaultExpression>nextval(&apos;starv_platform_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>starv_platform_id_seq</SequenceName>
+    </column>
+    <column id="174" parent="53" name="platform_code">
+      <Position>2</Position>
+      <Comment>平台code</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>603</StateNumber>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="175" parent="53" name="platform_name">
+      <Position>3</Position>
+      <Comment>平台name</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>603</StateNumber>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="176" parent="53" name="starv_platform_pkey">
+      <ObjectId>16498</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="177" parent="53" name="starv_platform_pkey">
+      <ObjectId>16499</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>starv_platform_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="178" parent="54" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1538</StateNumber>
+      <DefaultExpression>nextval(&apos;starv_stb_num_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>starv_stb_num_id_seq</SequenceName>
+    </column>
+    <column id="179" parent="54" name="stb_num">
+      <Position>2</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1538</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="180" parent="54" name="area_code">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1538</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="181" parent="54" name="dt">
+      <Position>4</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1538</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="182" parent="54" name="operator">
+      <Position>5</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1538</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="183" parent="54" name="platform">
+      <Position>6</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1538</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="184" parent="54" name="starv_stb_num_pkey">
+      <ObjectId>16973</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="185" parent="54" name="starv_stb_num_pkey">
+      <ObjectId>16974</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>starv_stb_num_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="186" parent="55" name="id">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>5510</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="187" parent="55" name="code">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>5511</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="188" parent="55" name="lve">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>5512</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="189" parent="55" name="pcode">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>5513</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="190" parent="55" name="name">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>5514</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="191" parent="55" name="/">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>5485</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="192" parent="55" name="f7">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>5485</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="193" parent="56" name="menu_id">
+      <Position>1</Position>
+      <Comment>菜单id</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>878</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="194" parent="56" name="menu_name">
+      <Position>2</Position>
+      <Comment>菜单名称</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1137</StateNumber>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="195" parent="56" name="menu_parent_id">
+      <Position>3</Position>
+      <Comment>父级菜单id</Comment>
+      <DataType>bigint|0</DataType>
+      <StateNumber>878</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="196" parent="56" name="menu_path">
+      <Position>4</Position>
+      <Comment>菜单地址(接口url)</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1138</StateNumber>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="197" parent="56" name="status">
+      <Position>5</Position>
+      <Comment>是否展示 1为展示 2为不展示</Comment>
+      <DataType>integer|0</DataType>
+      <StateNumber>878</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="198" parent="56" name="system_menu_pkey">
+      <ObjectId>16728</ObjectId>
+      <ColNames>menu_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="199" parent="56" name="system_menu_pkey">
+      <ObjectId>16729</ObjectId>
+      <ColNames>menu_id</ColNames>
+      <UnderlyingIndexName>system_menu_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="200" parent="57" name="role_id">
+      <Position>1</Position>
+      <Comment>角色id</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1131</StateNumber>
+      <DefaultExpression>nextval(&apos;system_role_role_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>system_role_role_id_seq</SequenceName>
+    </column>
+    <column id="201" parent="57" name="role_name">
+      <Position>2</Position>
+      <Comment>权限(角色可以访问哪些页面)</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>861</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="202" parent="57" name="system_role_role_id_pk">
+      <ObjectId>16746</ObjectId>
+      <ColNames>role_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="203" parent="57" name="system_role_role_id_pk">
+      <ObjectId>16747</ObjectId>
+      <ColNames>role_id</ColNames>
+      <UnderlyingIndexName>system_role_role_id_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="204" parent="58" name="role_id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>619</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="205" parent="58" name="area_code">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>619</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="206" parent="59" name="role_id">
+      <Position>1</Position>
+      <Comment>角色id</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>621</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="207" parent="59" name="channel_code">
+      <Position>2</Position>
+      <Comment>频道组code</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1415</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="208" parent="60" name="role_id">
+      <Position>1</Position>
+      <Comment>角色id</Comment>
+      <DataType>bigint|0</DataType>
+      <StateNumber>625</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="209" parent="60" name="menu_id">
+      <Position>2</Position>
+      <Comment>菜单id</Comment>
+      <DataType>bigint|0</DataType>
+      <StateNumber>625</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="210" parent="60" name="system_role_menu_system_role_role_id_fk">
+      <ObjectId>16769</ObjectId>
+      <ColNames>role_id</ColNames>
+      <RefTableId>16694</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>system_role</RefTableName>
+      <RefKeyName>system_role_role_id_pk</RefKeyName>
+      <RefColNames>role_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="211" parent="60" name="system_role_menu_system_menu_menu_id_fk">
+      <ObjectId>16759</ObjectId>
+      <ColNames>menu_id</ColNames>
+      <RefTableId>16720</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>system_menu</RefTableName>
+      <RefKeyName>system_menu_pkey</RefKeyName>
+      <RefColNames>menu_id</RefColNames>
+    </foreign-key>
+    <column id="212" parent="61" name="role_id">
+      <Position>1</Position>
+      <Comment>角色id</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>629</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="213" parent="61" name="operator_code">
+      <Position>2</Position>
+      <Comment>运营商code</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>629</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="214" parent="61" name="system_role_operator_system_role_role_id_fk">
+      <ObjectId>16780</ObjectId>
+      <ColNames>role_id</ColNames>
+      <RefTableId>16694</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>system_role</RefTableName>
+      <RefKeyName>system_role_role_id_pk</RefKeyName>
+      <RefColNames>role_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="215" parent="61" name="system_role_operator_starv_operator_operator_code_fk">
+      <ObjectId>16796</ObjectId>
+      <ColNames>operator_code</ColNames>
+      <RefTableId>16476</RefTableId>
+      <RefColPositions>2</RefColPositions>
+      <RefTableName>starv_operator</RefTableName>
+      <RefColNames>operator_code</RefColNames>
+    </foreign-key>
+    <column id="216" parent="62" name="role_id">
+      <Position>1</Position>
+      <Comment>角色id</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>633</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="217" parent="62" name="platform_code">
+      <Position>2</Position>
+      <Comment>平台code</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>633</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="218" parent="62" name="system_role_platform_system_role_role_id_fk">
+      <ObjectId>16812</ObjectId>
+      <ColNames>role_id</ColNames>
+      <RefTableId>16694</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>system_role</RefTableName>
+      <RefKeyName>system_role_role_id_pk</RefKeyName>
+      <RefColNames>role_id</RefColNames>
+    </foreign-key>
+    <column id="219" parent="63" name="user_id">
+      <Position>1</Position>
+      <Comment>操作员id</Comment>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>888</StateNumber>
+      <DefaultExpression>nextval(&apos;system_user_user_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>system_user_user_id_seq</SequenceName>
+    </column>
+    <column id="220" parent="63" name="create_date">
+      <Position>2</Position>
+      <Comment>操作员诞生日期</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>888</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="221" parent="63" name="name">
+      <Position>3</Position>
+      <Comment>操作员账号</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>888</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="222" parent="63" name="password">
+      <Position>4</Position>
+      <Comment>操作员密码</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>888</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="223" parent="63" name="role_id">
+      <Position>5</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>888</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="224" parent="63" name="system_user_pkey">
+      <ObjectId>16740</ObjectId>
+      <ColNames>user_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="225" parent="63" name="system_user_name_uindex">
+      <ObjectId>17043</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="226" parent="63" name="system_user_pkey">
+      <ObjectId>16741</ObjectId>
+      <ColNames>user_id</ColNames>
+      <UnderlyingIndexName>system_user_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="227" parent="64" name="media_id">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1222</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="228" parent="64" name="media_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1889</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="229" parent="64" name="cp_code">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>3278</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="230" parent="64" name="vod_media_tmp_pkey">
+      <ObjectId>16830</ObjectId>
+      <ColNames>media_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="231" parent="64" name="vod_media_tmp_pkey">
+      <ObjectId>16831</ObjectId>
+      <ColNames>media_id</ColNames>
+      <UnderlyingIndexName>vod_media_tmp_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <argument id="232" parent="65">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>trigger|0</DataType>
+    </argument>
+  </database-model>
+</dataSource>

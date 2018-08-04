@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="starv_shandong@80.0.0.56" uuid="0d8c50f8-3406-48b5-8990-a75f6c68c37e">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://80.0.0.56:5432/starv_shandong</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="线上" uuid="f42b2e3e-cf72-4af9-bfe8-2d2ffd5dbd9e">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://10.23.255.29:5432/starv_shandong</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="xianshang" uuid="3433e927-7231-42c2-9c85-63fc40216971">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://10.23.255.29:5432/starv_shandong</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="postgres@localhost" uuid="645a1030-8b3b-460c-b098-ab27dba56108">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
+    </data-source>
+  </component>
+</project>

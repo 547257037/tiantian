@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="starv-iptv-4:war">
+    <output-path>$PROJECT_DIR$/starv-iptv-4/target</output-path>
+    <root id="archive" name="iptv4.war">
+      <element id="artifact" artifact-name="starv-iptv-4:war exploded" />
+    </root>
+  </artifact>
+</component>

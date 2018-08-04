@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="starv_shandong@80.0.0.56" uuid="0d8c50f8-3406-48b5-8990-a75f6c68c37e">
+      <database-info product="PostgreSQL" version="10.3" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>starv_shandong:public</introspection-schemas>
+    </data-source>
+    <data-source name="线上" uuid="f42b2e3e-cf72-4af9-bfe8-2d2ffd5dbd9e">
+      <database-info product="PostgreSQL" version="10.3" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>postgres:public</introspection-schemas>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>120.192.66.24</proxy-host>
+        <proxy-port>4420</proxy-port>
+        <secret-storage>master_key</secret-storage>
+        <user>root</user>
+        <use-password>true</use-password>
+        <auth-type>PASSWORD</auth-type>
+      </ssh-properties>
+    </data-source>
+    <data-source name="xianshang" uuid="3433e927-7231-42c2-9c85-63fc40216971">
+      <database-info product="PostgreSQL" version="10.3" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>starv_shandong:public</introspection-schemas>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>120.192.66.24</proxy-host>
+        <proxy-port>4420</proxy-port>
+        <secret-storage>master_key</secret-storage>
+        <user>root</user>
+        <use-password>true</use-password>
+        <auth-type>PASSWORD</auth-type>
+      </ssh-properties>
+    </data-source>
+    <data-source name="postgres@localhost" uuid="645a1030-8b3b-460c-b098-ab27dba56108">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+    </data-source>
+  </component>
+</project>
